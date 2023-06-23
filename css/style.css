@@ -1,0 +1,107 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: 100% 100%;
+}
+
+
+.bg-nav {
+    background-color: #937C47;
+}
+
+.nav-item a {
+    color: white;
+    transition: color 0.5s;
+}
+
+.home-caption {
+    font-size: 25px;
+}
+
+.home:hover,
+.about:hover,
+.offer:hover,
+.gallery:hover,
+.blog:hover,
+.contact:hover,
+.btn1:hover,
+.btn2:hover {
+    color: black;
+}
+body:has(#about-link:target) .about,
+body:has(#backing-link:target) .gallery,
+body:has(#blog-link:target) .blog,
+body:has(#contact-link:target) .contact
+{
+    color: black;
+}
+
+.home-caption h1 {
+    font-size: 4rem;
+}
+
+.btn1,
+.btn2 {
+    background-color: #937C47;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    color: white;
+}
+
+h2::first-letter {
+    color: #937C47;
+}
+
+.about-sec figure,
+.location figure {
+    border: 8px solid #937C47;
+    border-radius: 10px;
+}
+
+.about-sec figure img,
+.location figure img {
+    transform: translate(20px, 20px);
+}
+
+.about-list li {
+    margin-bottom: 1rem;
+}
+
+.location,
+.contact-us {
+    background-color: #ebeaea;
+}
+
+.for-flow {
+    overflow: hidden;
+}
+
+.zoom {
+    transition: all 0.7s;
+}
+
+.backin-cap:hover .zoom {
+    transform: scale(1.2);
+}
+
+.blog-content ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.blog-content ul li {
+    padding: 7px 0;
+}
+
+
+@media screen and (max-width:850px) {
+    .home-caption {
+        font-size: 20px;
+    }
+
+}
